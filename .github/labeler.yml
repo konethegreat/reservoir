@@ -1,0 +1,33 @@
+"area: docs":
+  - changed-files:
+      - any-glob-to-any-file: ['docs/**', '*.md']
+"area: mobile":
+  - changed-files:
+      - any-glob-to-any-file: 'apps/mobile/**'
+"area: web":
+  - changed-files:
+      - any-glob-to-any-file: 'apps/web/**'
+"area: api":
+  - changed-files:
+      - any-glob-to-any-file: 'apps/api/**'
+"area: ai":
+  - changed-files:
+      - any-glob-to-any-file: 'services/agents/**'
+"area: schemas":
+  - changed-files:
+      - any-glob-to-any-file: 'packages/schemas/**'
+"area: data":
+  - changed-files:
+      - any-glob-to-any-file: 'data/**'
+"area: ci":
+  - changed-files:
+      - any-glob-to-any-file: ['.github/**']
+"area: governance":
+  - changed-files:
+      - any-glob-to-any-file: ['GOVERNANCE.md', 'CODE_OF_CONDUCT.md', 'SECURITY.md', 'docs/legal/**', 'docs/architecture/knowledge-sovereignty.md']
+"area: safety":
+  - changed-files:
+      - any-glob-to-any-file: 'docs/architecture/safety-model.md'
+"type: adr":
+  - changed-files:
+      - any-glob-to-any-file: 'docs/adr/**'

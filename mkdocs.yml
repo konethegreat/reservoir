@@ -1,0 +1,79 @@
+site_name: Reservoir
+site_description: Open, community-grown platform for preserving South African cultural knowledge
+site_url: https://konethegreat.github.io/reservoir/
+repo_url: https://github.com/konethegreat/reservoir
+repo_name: konethegreat/reservoir
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - search.highlight
+
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Vision:
+      - Vision: vision/vision.md
+      - Principles: vision/principles.md
+      - Personas: vision/personas.md
+      - Glossary: vision/glossary.md
+  - Research:
+      - Landscape: research/landscape.md
+      - Languages: research/languages.md
+      - Data sources: research/data-sources.md
+      - Technology: research/tech-stack-research.md
+      - Legal and ethics: research/legal-and-ethics.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Data model: architecture/data-model.md
+      - Knowledge sovereignty: architecture/knowledge-sovereignty.md
+      - Safety model: architecture/safety-model.md
+      - AI agents: architecture/ai-agents.md
+      - Plant identification: architecture/plant-identification.md
+      - Offline and sync: architecture/offline-sync.md
+  - Decisions (ADRs):
+      - Index: adr/README.md
+      - "0001 Record decisions": adr/0001-record-architecture-decisions.md
+      - "0002 Monorepo": adr/0002-monorepo.md
+      - "0003 Polyglot stack": adr/0003-polyglot-stack.md
+      - "0004 Mobile framework": adr/0004-mobile-framework.md
+      - "0005 Core API in Rust": adr/0005-core-api-rust.md
+      - "0006 AI layer": adr/0006-ai-layer-python-provider-agnostic.md
+      - "0007 Offline sync": adr/0007-offline-first-sqlite-sync.md
+      - "0008 Sovereignty model": adr/0008-knowledge-sovereignty-model.md
+      - "0009 Licensing": adr/0009-licensing.md
+  - Product:
+      - MVP scope: product/mvp-scope.md
+      - User journeys: product/user-journeys.md
+  - Community:
+      - Language custodians: community/language-custodians.md
+  - Legal:
+      - Licensing: legal/licensing.md

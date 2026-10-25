@@ -1,0 +1,12 @@
+config:
+  default: true
+  MD013: false        # line length: prose is written one sentence per line where useful
+  MD033: false        # inline HTML is used in the README header
+  MD036: false        # emphasis used as heading in quotes
+  MD041: false        # first line need not be H1 (README has a centred HTML block)
+  MD024:
+    siblings_only: true
+  MD060: false        # table column style
+ignores:
+  - "node_modules/**"
+  - "LICENSE"

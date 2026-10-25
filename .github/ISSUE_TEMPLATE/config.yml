@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions, ideas and introductions
+    url: https://github.com/konethegreat/reservoir/discussions
+    about: Ask a question, share an idea, or introduce yourself in Discussions.
+  - name: Report a security vulnerability (private)
+    url: https://github.com/konethegreat/reservoir/security/advisories/new
+    about: Please do not report security issues publicly. Use private reporting.

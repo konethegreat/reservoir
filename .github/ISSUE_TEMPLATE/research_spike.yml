@@ -1,0 +1,27 @@
+name: Research question / spike
+description: Propose or track a time-boxed investigation
+labels: ["area: research", "type: spike"]
+body:
+  - type: input
+    id: question
+    attributes:
+      label: Question
+      description: One sentence. What do we need to find out?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Which decision (ADR) does this inform?
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Approach and time box
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: What does the write-up in docs/research/spikes/ need to contain?

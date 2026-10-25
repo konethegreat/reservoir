@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "ci"
+    labels: ["area: ci", "dependencies"]
+  # Add cargo / pub / npm / pip ecosystems as each area is scaffolded:
+  #   - package-ecosystem: cargo      directory: /apps/api
+  #   - package-ecosystem: pub        directory: /apps/mobile
+  #   - package-ecosystem: npm        directory: /apps/web
+  #   - package-ecosystem: pip        directory: /services/agents

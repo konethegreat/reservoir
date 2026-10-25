@@ -1,0 +1,32 @@
+name: Language custodian application
+description: Volunteer to look after how your language is represented in Reservoir
+labels: ["area: languages", "community", "needs triage"]
+title: "[Custodian] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! You do not need to be technical. Read [what custodians do](https://github.com/konethegreat/reservoir/blob/main/docs/community/language-custodians.md).
+        Share only what you are comfortable having public. Prefer not to use GitHub? Say so and we will arrange another way.
+  - type: input
+    id: language
+    attributes:
+      label: Language(s) and dialect(s)
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: Your connection to the language
+      description: Speaker, teacher, linguist, community leader, etc. Share as much or as little as you like.
+    validations:
+      required: true
+  - type: dropdown
+    id: capacity
+    attributes:
+      label: How much time could you offer?
+      options: [A few hours a month, A few hours a week, Ad hoc / when needed, Not sure yet]
+  - type: textarea
+    id: community
+    attributes:
+      label: Others who should be involved (organisations, schools, groups)

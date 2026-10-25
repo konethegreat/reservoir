@@ -1,0 +1,40 @@
+name: Cultural sensitivity / takedown
+description: Content or behaviour that is disrespectful, inaccurate, mis-attributed, or should be restricted or removed
+labels: ["cultural-sensitivity", "priority: high", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We treat these reports as the **highest priority**.
+        **If describing the concern would itself expose sensitive or sacred knowledge, do not describe it here.**
+        Instead say "I need to report something privately" and a maintainer will arrange a private channel, or use [private reporting](https://github.com/konethegreat/reservoir/security/advisories/new).
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: Link, file, entry ID, or screen
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is the concern?
+      options:
+        - Should be restricted or made private
+        - Should be removed
+        - Wrong or missing attribution
+        - Inaccurate or disrespectful representation
+        - Language / orthography error
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details (without repeating sensitive content)
+    validations:
+      required: true
+  - type: input
+    id: community
+    attributes:
+      label: Community, language or group you are speaking for or about (optional)

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use Reservoir or its documentation in your work, please cite it as below."
+title: "Reservoir: an open platform for preserving South African cultural knowledge"
+type: software
+authors:
+  - family-names: Tshivhinda
+    given-names: Kone
+    alias: konethegreat
+repository-code: "https://github.com/konethegreat/reservoir"
+license: Apache-2.0
+keywords:
+  - cultural heritage
+  - indigenous knowledge
+  - ethnobotany
+  - South Africa
+  - African languages
+  - plant identification
+  - language preservation
+abstract: >-
+  Reservoir is a free, open, community-grown platform and mobile app for preserving
+  and sharing South African cultural knowledge: plants and their traditional uses,
+  food, practices and languages, with community-controlled consent and a mission-native AI.

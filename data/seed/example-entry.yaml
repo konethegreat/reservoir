@@ -1,0 +1,44 @@
+# ILLUSTRATIVE EXAMPLE ONLY — demonstrates the data model.
+# Not verified, not for use as a source of information about the plant.
+# Real records require real sources, consent and review.
+status: example
+
+entry:
+  id: example-0001
+  type: plant
+  canonical_ref:
+    system: sanbi-national-plant-checklist
+    id: PLACEHOLDER
+  taxon:
+    accepted_name: "Artemisia afra"
+    family: Asteraceae
+  conservation_status: PLACEHOLDER
+  harvest_sensitive: false
+  toxicity_level: caution        # EXAMPLE VALUE: pending safety review
+  lookalikes: []                 # to be curated by a qualified reviewer
+
+names:
+  - language: en
+    text: "African wormwood"
+    claim_id: example-claim-0001
+  # Indigenous-language names must come from consenting speakers or cited
+  # sources, reviewed by a language custodian. None are invented here.
+
+claims:
+  - id: example-claim-0001
+    kind: name
+    body: { en: "Common English name" }
+    source:
+      kind: publication
+      citation: "PLACEHOLDER — cite a real source"
+    confidence: documented
+    review_status: unreviewed
+    safety_review: unreviewed
+    ai_generated: false
+    consent:
+      visibility: public
+      attribution: named
+      ai_use: none               # most restrictive default
+      redistribution: none
+      tk_labels: []
+      agreement_version: "0.0-example"

@@ -1,0 +1,12 @@
+# Default owner
+*                                   @konethegreat
+
+# Anything touching consent, safety, governance or legal needs explicit owner review.
+# Add Knowledge Advisors / Language Custodians here as they join.
+/docs/architecture/knowledge-sovereignty.md   @konethegreat
+/docs/architecture/safety-model.md            @konethegreat
+/docs/legal/                                  @konethegreat
+/docs/research/legal-and-ethics.md            @konethegreat
+/GOVERNANCE.md                                @konethegreat
+/SECURITY.md                                  @konethegreat
+/.github/                                     @konethegreat

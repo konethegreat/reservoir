@@ -1,0 +1,41 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: ["type: bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Security issue?** Use [private reporting](https://github.com/konethegreat/reservoir/security/advisories/new) instead.
+        Please do not paste real community knowledge or personal information.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Mobile app, Web, Core API, AI agents, Schemas, Docs, CI / tooling, Not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Device / OS / version / language setting
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: This bug could cause someone to receive unsafe plant or health information (flag as urgent)
+        - label: This bug could expose restricted or private information (please use private reporting instead)

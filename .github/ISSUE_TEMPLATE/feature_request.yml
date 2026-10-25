@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an idea for Reservoir
+labels: ["type: feature", "needs triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve, and for whom?
+      description: Tell us about a real moment or person. Personas are in docs/vision/personas.md.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you imagine?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: cultural
+    attributes:
+      label: Cultural, consent or safety implications
+      description: Could this affect how communities, languages or safety information are represented? If not, write "none".
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Participation
+      options:
+        - label: I would like to help build or test this
